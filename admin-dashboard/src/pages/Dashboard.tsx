@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Grid, Typography, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, Chip, CircularProgress, Box } from '@mui/material';
+import { Grid2 as Grid, Typography, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, Chip, CircularProgress, Box } from '@mui/material';
 import { People, Inventory, Campaign, LocalOffer, AttachMoney } from '@mui/icons-material';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 import StatsCard from '../components/StatsCard';

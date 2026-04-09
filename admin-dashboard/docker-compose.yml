@@ -1,0 +1,14 @@
+version: '3.8'
+
+# Admin Dashboard (deploy separately)
+services:
+  admin-dashboard:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: queen-pharmacy-admin
+    ports:
+      - "3000:80"
+    environment:
+      - BACKEND_URL=https://back.queeny-pharmacy.online
+    restart: unless-stopped

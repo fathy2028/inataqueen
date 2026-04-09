@@ -15,7 +15,7 @@ services:
     networks:
       - backend-network
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U fathy"]
+      test: ["CMD-SHELL", "pg_isready -U fathy -d queen_pharmacy"]
       interval: 10s
       timeout: 5s
       retries: 5
